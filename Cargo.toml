@@ -8,6 +8,6 @@ name = "stringsum"
 crate-type = ["cdylib"]
 
 [dependencies.pyo3]
-version = "0.7.0"
+version = "0.6.0"
 default-features = false
 # features = ["extension-module"]
