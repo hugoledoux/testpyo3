@@ -17,7 +17,4 @@ matrix:
 script:
   - "pip install cibuildwheel==0.10.2 setuptools-rust==0.10.3"
   - export RUST_BACKTRACE=1
-  - export CIBW_BEFORE_BUILD="pip install setuptools-rust==0.10.3 && source ./scripts/travis"
-  - export CIBW_ENVIRONMENT="CI=\"$CI\" TRAVIS_BRANCH=\"$TRAVIS_BRANCH\" TRAVIS_COMMIT=\"$TRAVIS_COMMIT\" PATH=\"\$HOME/.cargo/bin:\$PATH\""
-  - export CIBW_TEST_COMMAND="python -c 'import stringsum'"
   - cibuildwheel --output-dir wheelhouse
