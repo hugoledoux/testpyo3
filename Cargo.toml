@@ -1,0 +1,12 @@
+[package]
+name = "stringsum"
+version = "0.1.0"
+edition = "2018"
+
+[lib]
+name = "stringsum"
+crate-type = ["cdylib"]
+
+[dependencies.pyo3]
+version = "0.7.0"
+features = ["extension-module"]
