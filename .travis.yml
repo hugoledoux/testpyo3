@@ -23,6 +23,8 @@ env:
 script:
   - echo $TWINE_USERNAME
   - echo $TWINE_PASSWORD
+  - export ROGER=$TWINE_PASSWORD
+  - echo $ROGER
   # - "pip install cibuildwheel==0.10.2 setuptools-rust==0.10.3"
   # - export RUST_BACKTRACE=1
   # - export CIBW_BEFORE_BUILD="pip install setuptools-rust==0.10.3 && source ./scripts/travis"
