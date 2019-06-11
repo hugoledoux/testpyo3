@@ -21,7 +21,7 @@ env:
     - TWINE_USERNAME=hledoux
     # Note: TWINE_PASSWORD is set in Travis settings.
 script:
-  # - echo $TWINE_USERNAME
+  - echo $TWINE_USERNAME
   # - echo $TWINE_PASSWORD
   # - export ROGER=$TWINE_PASSWORD
   # - echo $ROGER
